@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>Happy Valentine 💖</title>
+  
+  <!-- Hubungkan ke file CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Overlay untuk trigger musik -->
+  <div class="start-overlay" id="startOverlay">
+    <div class="start-content">
+      <h2>💖 Happy Valentine 💖</h2>
+      <p>✨ Klik di mana saja untuk membuka ✨</p>
+    </div>
+  </div>
+
+  <!-- Card utama -->
+  <div class="card">
+    <h1>Happy Valentine for you <span class="heart-emoji">💐</span></h1>
+    <p>Hari ini resmi jadi pengingat bahwa senyum itu penting. Entah dirayakan besar-besaran atau biasa saja, semoga tetap ada tawa kecil yang bikin hari terasa lebih ringan.</p>
+
+    <!-- Tombol balas ke IG -->
+    <a href="https://ig.me/m/rubuu_2" target="_blank" class="reply-btn">
+      <span>Balas 💌</span>
+    </a>
+  </div>
+
+  <!-- Indikator musik -->
+  <div class="music-indicator" id="musicIndicator">
+    <div class="music-bars">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    Musik sedang diputar
+  </div>
+
+  <!-- Audio player (hidden) -->
+  <audio id="bg-music" loop>
+    <source src="bluee.mp3" type="audio/mpeg">
+    <!-- Fallback jika browser tidak support MP3 -->
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Hubungkan ke file JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
